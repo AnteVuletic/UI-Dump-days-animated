@@ -1,0 +1,25 @@
+{
+  "name": "ui-dump-days-animated-scss",
+  "version": "1.0.0",
+  "description": "Moving dump days task into SCSS and animating segments",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnteVuletic/UI-Dump-days-animated-scss.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnteVuletic/UI-Dump-days-animated-scss/issues"
+  },
+  "homepage": "https://github.com/AnteVuletic/UI-Dump-days-animated-scss#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-refresh": "^1.1.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
