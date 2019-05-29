@@ -1,0 +1,95 @@
+.gallery{
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+}
+.gallery__graphics{
+    position: absolute;
+    top: -2%;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+}
+.graphics__wrapper{
+    position: absolute;
+    top: 27%;
+    left: 20%;
+    font-family: "Fuse V.2 Display";
+    color: white;
+    font-size: 2.5vw;
+    width: 240px;
+    text-transform: uppercase;
+}
+.graphics__wrapper h3{
+    font-weight: 600;
+}
+.wrapper__cyan{
+    color: #30CEC2;
+}
+.gallery__graphics img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.gallery__row{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+.gallery__row--first img{
+    width: 25%;
+    height: 50%;
+}
+.gallery__row--second img{
+    width: 37.5%;
+    height: 50%;
+}
+.gallery__row--third{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: "Fuse V.2 Display";
+}
+.gallery__row--third h3{
+    font-size: 160px;
+    font-weight: 600;
+    color: #d8d8d8;
+    margin: 0;
+    width: 33.33%;
+    text-align: center;
+}
+.gallery__row--third h4{
+    text-align: center;
+    width: 33.33%;
+    font-weight: 600;
+    font-size: 35px;
+    color: #30CEC2;
+    margin: 0;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 1240px){
+    .graphics__wrapper{
+        top: 25%;
+        left: 20%;
+        font-size: 30px;
+        width: 240px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .graphics__wrapper{
+        top: 22.5%;
+        left: 10%;
+        font-size: 28px;
+        width: 240px;
+    }
+    .gallery__row--third h3{
+        font-size: 120px;
+    }
+}
+@media screen and (max-width: 768px){
+    .gallery{
+        display: none;
+    }
+}

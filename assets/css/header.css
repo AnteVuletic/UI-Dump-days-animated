@@ -1,0 +1,63 @@
+.header__background{
+    background-image: url("../images/dumpdays_web/Page 1/final/header.a62ee423.jpg");
+    height: 80%;
+    width: 100%;
+    background-size: cover;
+}
+.header__tittle{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 30% 0 20% 0;
+    color: #FFFFFF;
+}
+.tittle__main{
+    font-family: "Fuse V.2 Display";
+    font-size: 68px;
+    margin: 0 0 21px 0;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.tittle__blue{
+    color: #30CEC2;
+}
+.tittle__date{
+    font-family: "Fuse V.2 Display";
+    font-size: 28px;
+    font-weight: normal;
+}
+@keyframes flicker{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+.cursor{
+    display: inline-block;
+    width: 5px;
+    height: 60px;
+    margin-left: 10px;
+    margin-bottom: -10px;
+    background-color: #30CEC2;
+}
+.cursor--flashing{
+    display: inline-block;
+    width: 5px;
+    height: 60px;
+    margin-left: 10px;
+    margin-bottom: -10px;
+    background-color: #30CEC2;
+    animation: flicker 0.75s infinite;
+}
+@media screen and (max-width: 565px){
+    .tittle__main{
+        font-size: 34px;
+    }
+}
+@media screen and (max-width: 500px){
+    .header__background{
+        display: none;
+    }
+}

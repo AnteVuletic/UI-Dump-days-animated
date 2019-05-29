@@ -1,0 +1,217 @@
+.section__schedule {
+  width: 70%;
+  margin: 0 auto;
+  font-family: "Fuse V.2 Display";
+  overflow: hidden;
+}
+
+.schedule {
+  border-top: 12px solid #30cec2;
+}
+
+.schedule__about {
+  width: 65%;
+  text-align: center;
+  margin: 80px 200px 80px;
+}
+
+.schedule__about h1 {
+  font-size: 46px;
+  font-weight: 600;
+  color: #1a3b43;
+  text-transform: uppercase;
+}
+
+.schedule__about p {
+  font-size: 16px;
+  line-height: 20px;
+  box-sizing: border-box;
+  color: #193b44;
+}
+
+.schedule__dates {
+  display: flex;
+  box-sizing: border-box;
+  margin: 40px 355px;
+  border: 1px solid #30cec2;
+  border-radius: 10px;
+  width: 28%;
+}
+
+.schedule__date {
+  height: 55px;
+  width: 135px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+}
+
+.schedule__date--first {
+  background-color: #30cec2;
+  color: white;
+}
+
+.span__day {
+  font-size: 22px;
+}
+.span__date {
+  font-size: 14px;
+}
+
+.span__day--blue {
+  color: #38cec2;
+}
+
+.schedule__list {
+  display: flex;
+  padding: 20px 0px 10px;
+  border-bottom: 1px solid #cecccc;
+}
+
+.schedule__list--left {
+  justify-content: flex-start;
+
+  width: 900px;
+}
+
+.hour__image {
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.logo__picture {
+  width: 90px;
+  height: 30px;
+  justify-content: flex-end;
+  opacity: 0.6;
+  padding-top: 40px;
+}
+
+.span__hour {
+  display: inline-block;
+  color: #193b44;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.span__type {
+  color: white;
+  padding: 4px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 7px;
+  margin: -4px 0px 0px 5px;
+  text-transform: uppercase;
+}
+
+.span__type--red {
+  background-color: #e25e5f;
+}
+
+.span__type--green {
+  background-color: #a2d29f;
+}
+
+.span__type--blue {
+  background-color: #203c44;
+}
+
+.schedule__days {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.schedule__list--left h1 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: -5px;
+  color: #193b44;
+  text-transform: uppercase;
+  display: block;
+}
+
+.schedule__list--left p {
+  margin-bottom: 10px;
+  color: #262626;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.workshops {
+  color: #30cec2;
+  padding: 5x 0px;
+  font-size:22px;
+  font-weight:normal;
+}
+
+@media screen and (max-width: 1240px) {
+  .schedule__days {
+    width: 80%;
+  }
+
+  .section__schedule {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .schedule__dates {
+    margin: 0 auto;
+    width: 35%;
+  }
+  .schedule__about {
+    width: 70%;
+    margin-left: 140px;
+  }
+
+  .schedule__days {
+    width: 100%;
+  }
+
+  .logo__picture {
+    display: none;
+  }
+  .section__schedule {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .schedule__about h1 {
+    font-size: 36px;
+  }
+
+  .schedule__about {
+    width: 90%;
+    margin-left: 50px;
+  }
+  .schedule__dates {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .schedule__about {
+    width: 95%;
+    margin-left: 0px;
+  }
+
+  .schedule__dates {
+    width: 64%;
+  }
+
+  .schedule__days {
+    width: 85%;
+  }
+
+  .schedule__list--left h1 {
+    line-height: 30px;
+  }
+}

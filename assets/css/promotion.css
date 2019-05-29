@@ -1,0 +1,446 @@
+.promotion{
+    width: 100%;
+    overflow: hidden;
+}
+.section__background--mobile{
+    display: none;
+}
+section.promotion div:nth-child(2n + 0) div:nth-child(2){
+    order: -1;
+}
+div.section__images img:nth-child(2){
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.section__images{
+    width: 40%;
+    height: fit-content;
+}
+.section__images img{
+    width: 100%;
+    height: 100%;
+}
+.images__naslov--mask{
+    top: 33% !important;
+}
+.section__text{
+    color: #1a3b43;
+}
+.text__tittle{
+    position: relative;
+    transform: translateX(-700px);
+    transition: all 0.5s ease-in;
+}
+.text__tittle--inbound{
+    transform: translateX(0);
+}
+.text__tittle h1{
+    display: inline-block;
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #1F3C44;
+    padding: 5px 15px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin: 20px 0 0 0;
+}
+.text__tittle div{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    overflow: hidden;
+    z-index: -1;
+    border-radius: 10px;
+    background-color: #30CEC2;
+}
+.text__tittle--bigger div{
+    width: 500px;
+    height: 75px;
+}
+.text__tittle--smaller div{
+    width: 372px;
+    height: 75px;
+}
+.text__tittle--bigger img{
+    position: absolute;
+    width: 200%;
+    height: 400%;
+    margin-top: -37%;
+    margin-left: -36%;
+    filter: opacity(50%);
+}
+.text__tittle--smaller img{
+    position: absolute;
+    width: 222%;
+    height: 370%;
+    margin-top: -47%;
+    margin-left: -44%;
+    filter: opacity(50%);
+}
+.rotate-y{
+    transform: rotate(-180deg);
+}
+.rotate90{
+    transform: rotate(90deg);
+}
+.rotate-90{
+    transform: rotate(-90deg);
+}
+.promotion__section{
+    display: flex;
+    position: relative;
+}
+.section__images{
+    position: relative;
+}
+.section__text--naslov{
+    padding: 0 150px;
+}
+.section__text--naslov p{
+    padding: 50px 150px 50px 0 !important;
+}
+.section__text p{
+    font-family: sans-serif;
+    font-size: 19px;
+    line-height: 35px;
+    margin: 0;
+}
+.promotion__section--naslov{
+    margin-top: 100px;
+}
+.section__text h2{
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+.section__text{
+    width: 60%;
+    box-sizing: border-box;
+    padding: 100px;
+    font-family: "Fuse V.2 Display";
+}
+.section__images--predavac .images__mask{
+    right: 50%;
+    width: 75%;
+    height: 125%;
+}
+.promotion__section--predavanja .section__text{
+    position: relative;
+    padding: 225px 250px 0 200px;   
+}
+.promotion__section--predavanja::before{
+    content: "16";
+    font-family: "Fuse V.2 Display";
+    font-weight: 600;
+    position: absolute;
+    bottom: 23%;
+    right: 35%;
+    font-size: 200px;
+    opacity: .16;
+    color: #3c5860;
+}
+.promotion__section--panel .section__text{
+    position: relative;
+    height: fit-content;
+    padding: 25% 31% 0 0;
+}
+.promotion__section--panel::before{
+    content: "2";
+    font-family: "Fuse V.2 Display";
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    left: 37%;
+    font-size: 200px;
+    opacity: .5;
+    color: #3c5860;
+}
+.section__background{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.promotion__section--panel .section__text{
+    order: 1 !important;
+}
+.promotion__section--radionice .section__images{
+    width: 55%;
+}
+.promotion__section--radionice .section__text{
+    width: 65%;
+    padding: 100px 210px;
+}
+.dark h2{
+    color: #30CEC2;
+}
+.dark p{
+    color: #FFFF;
+}
+.promotion__section--izlozba{
+    background-color: #1a3b43;
+}
+.promotion__section--izlozba .section__text{
+    padding: 200px 280px 200px 200px;
+}
+.promotion__section--networking .section__images{
+    margin-top: -200px;
+}
+.promotion__section--networking .images__mask{
+    right: 50%;
+    top: 10% !important;
+}
+.promotion__section--nagrade{
+    justify-content: flex-end;
+}
+.promotion__section--nagrade .images__mask{
+    left: 50%;
+    top: -5% !important;
+}
+.promotion__section--nagrade .section__images{
+    width: 35%;
+}
+.promotion__section--nagrade .section__text{
+    box-sizing: border-box;
+    width: 65%;
+    margin-left: 25%;
+}
+.images__predavac{
+    height: 120% !important;
+    width: 120% !important;
+}
+.section__images--predavac{
+    top: -50px;
+}
+
+@media screen and (max-width: 1024px){
+    .promotion__section--panel::before{
+        bottom: 37%;
+    }
+    .promotion__section--predavanja .section__text{
+        padding: 100px;
+    }
+    .section__text--naslov{
+        width: 70%;
+        padding: 0 0 0 40px;
+    }
+    .promotion__section--naslov .section__images{
+        width: 30%
+    }
+    .promotion__section--radionice{
+        justify-content: flex-end;
+    }
+    .promotion__section--radionice .section__text{
+        box-sizing: border-box;
+        width: 67%;
+        padding: 0 18% 0 12%;
+    }
+    .promotion__section--radionice .section__images{
+        width: 33%;
+        margin-bottom: -50px;
+    }
+    .promotion__section{
+        justify-content: flex-start;
+    }
+    .promotion__section--panel .section__images{
+        width: 33%;
+        margin-top: 75px;
+    }
+    .promotion__section--panel .section__text{
+        width: 45%;
+        padding: 5% 3% 5% 5%;
+    }
+    .promotion__section--izlozba .section__text{
+        padding: 90px 125px;
+    }
+    .promotion__section--networking .section__images{
+        margin-top: -80px;
+    }
+    .promotion__section--networking .section__text{
+        padding: 50px;
+    }
+    .promotion__section--nagrade .section__text{
+        margin: 0;
+        padding: 0 50px 0 200px;
+    }
+}
+@media screen and (max-width: 768px){
+    .promotion__section--predavanja::before{
+        font-size: 140px;
+        bottom: 14%;
+        right: 41%;    
+    }
+    .promotion__section--panel::before{
+        font-size: 140px;
+        bottom: 20%;
+        left: 33%;
+    }
+    .promotion__section--panel .section__text{
+        padding: 15% 3% 5% 5%;
+    }
+    .images__predavac{
+        width: 80% !important;
+        height: 80% !important;
+    }
+    .section__text h1{
+        font-size: 40px !important;
+    }
+    .section__text h2{
+        font-size: 32px !important;
+    }
+    .text__tittle--bigger div {
+        width: 408px;
+        height: 59px;
+    }
+    .text__tittle--smaller div {
+        width: 300px;
+        height: 59px;
+    }
+    .text__tittle h1{
+        margin-top: 17px;
+    }
+    .section__text--naslov p{
+        padding: 20px 0 0 5px !important;
+    }
+    .section__text p{
+        font-size: 17px;
+        line-height: 160%;
+    }
+    .promotion__section--predavanja .section__text{
+        padding: 40px 50px;
+    }
+    .promotion__section--radionice .section__text{
+        padding: 0 50px;
+    }
+    .promotion__section--izlozba .section__text{
+        padding: 25px 75px 0 75px;
+    }
+    .promotion__section--networking .section__text{
+        padding: 0 50px;
+    }
+    .promotion__section--nagrade .section__text{
+        padding: 0 50px 0 100px;
+    }
+}
+@media screen and (max-width: 500px){
+    .section__images--predavac .images__mask{
+        right: 63%;
+        width: 54%;
+        height: 125%;
+    }
+    .promotion__section--predavanja::before{
+        bottom: 2%;
+    }
+    .promotion__section--panel::before{
+        bottom: 15%;
+        left: 12%;
+    }
+    .section__images--predavac{
+        width: 100% !important;
+        height: 100% !important;
+        top: 0;
+    }
+    .promotion__section--naslov .section__images{
+        display: none;
+    }
+    .promotion__section{
+        flex-wrap: wrap;
+    }
+    .section__text h1{
+        font-size: 26px !important;
+    }
+    .text__tittle--bigger div {
+        width: 282px;
+        height: 41px;
+    }
+    .text__tittle--smaller div {
+        width: 213px;
+        height: 41px;
+    }
+    .text__tittle h1{
+        margin-top: 17px;
+    }
+    .section__text--naslov{
+        width: 85%;
+        margin: 0 auto;
+    }
+    .section__images--predavac{
+        width: 70%;
+    }
+    .promotion__section--predavanja .section__text{
+        width: 80%;
+        padding: 30px 37px 0 37px;
+        margin-left: auto;
+    }
+    .promotion__section--radionice .section__text{
+        width: 70%;
+    }
+    .promotion__section--radionice .section__images{
+        order: -1;
+        width: 70%;
+        margin: 0;
+        margin-left: auto;
+    }
+    .promotion__section--panel .section__images{
+        width: 70%;
+    }
+    .promotion__section--panel .section__text{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+    .section__background{
+        display: none;
+    }
+    .section__background--mobile{
+        display: block;
+        position: absolute;
+        bottom: -5%;
+        left: -5%;
+        width: 125%;
+        z-index: -1;
+        transform: rotatey(180deg)
+    }
+    .promotion__section--izlozba .section__images{
+        width: 70%;
+        margin-left: auto;
+        margin-bottom: -100px;
+    }
+    .promotion__section--izlozba .section__text{
+        width: 60%;
+        padding: 50px 15px;
+        margin-right: auto;
+        margin-left: 30px;
+    }
+    .promotion__section--networking .section__images{
+        width: 90%;
+        margin-top: 35%;
+    }
+    .promotion__section--networking .section__text{
+        margin-left: auto;
+        padding: 0;
+        width: 60%;
+    }
+    .promotion__section--nagrade .section__images{
+        order: -1;
+        width: 70%;
+        margin-left: auto;
+    }
+    .promotion__section--nagrade .section__text{
+        box-sizing: border-box;
+        width: 70%;
+        padding: 25px;
+    }
+}
+@media screen and (max-width: 375px){
+    .section__text--naslov{
+        width: 100%;
+        padding: 0 25px;
+    }
+}
