@@ -15,23 +15,22 @@
   margin: 80px 200px 80px;
 }
 
+@keyframes movingtitle{
+  0%{color:#1a3b43; font-size:46px; transform:rotate(0deg);}
+  40%{color:rgb(211, 64, 64); font-size:48px; transform:rotate(60deg);}
+  70%{color:rgb(32, 216, 32);font-size:50px; transform:rotate(180deg);}
+  100%{color:rgb(39, 240, 233); font-size:64px; transform:rotate(360deg);}
+}
+
 .schedule__about h1 {
   font-size: 46px;
   font-weight: 600;
   color: #1a3b43;
   text-transform: uppercase;
-  transition:color 4s ease-out, font-size 1s ease-in;
-
-
+  animation-name: movingtitle;
+  animation-duration: 5s;
+  animation-iteration-count: 100;
 }
-
-
-.schedule__about h1:hover{
-  font-size:70px;
-  color:red;
-  transform: rotate(180deg);
-}
-
 
 .schedule__about p {
   font-size: 16px;
@@ -55,8 +54,8 @@
   display: flex;
   flex-direction: column;
   padding: 10px;
-  text-align: center; 
-  transition:width 0.60s linear, height 1s ease-out ; 
+  text-align: center;  
+  transition: width 3s linear, height 3s linear;
 }
 
 
@@ -70,15 +69,21 @@
   height:75px;
 }
 
-
+@keyframes dates{
+  0%{ font-size:26px; transform:rotate(20deg);}
+  20%{ font-size:32px; transform:rotate(80deg); }
+  50%{ font-size:36px; transform:rotate(120deg); }
+  75%{font-size:40px; transform:rotate(260deg);}
+  100%{font-size:44px; transform:rotate(360deg); }
+}
 .span__day {
   font-size: 22px;
-  transition:font-size 1s ease-in;
+  animation-name:dates;
+  animation-duration:3s;
+  animation-iteration-count: 100;
+  animation-direction:alternate;
 }
 
-.span__day:hover{
-  font-size:38px; 
-}
 
 .span__day--blue {
   color: #38cec2;
@@ -95,7 +100,6 @@
 
 .schedule__list--left {
   justify-content: flex-start;
-
   width: 900px;
 }
 
