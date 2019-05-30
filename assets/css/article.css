@@ -20,7 +20,18 @@
   font-weight: 600;
   color: #1a3b43;
   text-transform: uppercase;
+  transition:color 4s ease-out, font-size 1s ease-in;
+
+
 }
+
+
+.schedule__about h1:hover{
+  font-size:70px;
+  color:red;
+  transform: rotate(180deg);
+}
+
 
 .schedule__about p {
   font-size: 16px;
@@ -39,30 +50,43 @@
 }
 
 .schedule__date {
-  height: 55px;
+  height: 65px;
   width: 135px;
   display: flex;
   flex-direction: column;
   padding: 10px;
-  text-align: center;
+  text-align: center; 
+  transition:width 0.60s linear, height 1s ease-out ; 
 }
+
 
 .schedule__date--first {
   background-color: #30cec2;
   color: white;
 }
 
+.schedule__date:hover{
+  width:200px;
+  height:75px;
+}
+
+
 .span__day {
   font-size: 22px;
+  transition:font-size 1s ease-in;
 }
-.span__date {
-  font-size: 14px;
+
+.span__day:hover{
+  font-size:38px; 
 }
 
 .span__day--blue {
   color: #38cec2;
 }
 
+.span__date {
+  font-size: 14px;
+}
 .schedule__list {
   display: flex;
   padding: 20px 0px 10px;

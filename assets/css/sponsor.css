@@ -17,9 +17,18 @@ width:90%;
     width:50%;
 }
 
+@keyframes title{
+    0%{ background-color:#1a3b43;color:yellow ;}
+    25%{background-color: #b9dde6; color:rgb(238, 173, 32) 
+} 
+    50%{background-color:#32bddd;color:rgb(243, 117, 20)}
+    75%{background-color:#207287;color: rgb(149, 22, 13)}
+    100%{background-color:#030d0f; color:red;}   
+}
 
 .generalsponsors--title{
     width:75%;
+    top:100px;
 }
 
 .general__title{
@@ -37,6 +46,9 @@ width:90%;
     width:90%;
     letter-spacing:2px;
     text-transform: uppercase;
+    animation-name:title;
+    animation-duration: 7s;
+    animation-iteration-count: 50;
 }
 
 
@@ -50,7 +62,8 @@ width:90%;
 }
 
 .title--narrow{width:34%;
-margin-top:-22px;}
+margin-top:-22px;
+}
 
 .title--wide{width:106%;}
 
